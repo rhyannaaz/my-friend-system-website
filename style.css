@@ -1,0 +1,353 @@
+/*
+author: Rhyanna;
+created: 26/08/2022;
+description: css for cos30020 assign2
+*/
+
+/* general styling */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+header {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px;
+    font-weight: 800;
+    background-color: #FAAC2C;
+}
+
+.pageTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+    margin-bottom: -3%;
+}
+
+p a {
+    color: #000000;
+}
+
+.friendsimg {
+    position: absolute;
+    width: 550px;
+    right: 12%;
+    top: 20%;
+}
+
+.page {
+    margin: auto;
+    padding: 10px;
+}
+
+.logo {
+    border-radius: 16px;
+    width: 128px;
+    margin-bottom: 15px;
+}
+
+.welcome {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.about {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 60px;
+    margin: 5%;
+    margin-top: 3%;
+}
+
+.noOfFriends {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 40%;
+    margin-top: 6%;
+}
+
+/* navigation styling */
+.navMenu {
+    position: absolute;
+    top: 45px;
+    right: 5%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+.active, nav ul li a:hover {
+    color: #555;
+}
+
+nav.navMenu ul li a {
+    position: relative;
+}
+
+nav.navMenu ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #555;
+    height: 1px;
+}
+
+nav.navMenu ul li a:hover:after {
+    width: 100%;
+}
+
+/* index styling */
+.personalInfo th {
+    text-align: left;
+    padding-right: 10px;
+}
+
+.briefintro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 12%;
+    margin-right: 55%;
+    margin-top: 8%;
+}
+
+/* form styling */
+form {
+    background-color: #E5E5E5;
+    padding: 60px;
+    height: 400px;
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+form td {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+form p {
+    padding: 0px 5px;
+    text-align: left;
+}
+
+form input[type=text], input[type=password], input[type=email] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 1%;
+    width: 300px;
+}
+
+/* button styling */
+.submitButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #136F63;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.resetButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #136F63;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submitButton:hover, .resetButton:hover {
+    background-color: #0F574E;
+}
+
+.unfriendButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #E15554;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.unfriendButton:hover {
+  background-color: #D02525;
+}
+
+.addFriendButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #1EAE9B;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.addFriendButton:hover {
+  background-color: #157A6D;
+}
+
+.prevButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FCA311;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 69%;
+    left: 30%;
+}
+
+.nextButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FCA311;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 69%;
+    right: 30%;
+}
+
+.prevButton:hover, .nextButton:hover {
+    background-color: #DE8A02;
+}
+
+/* table styling */
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.friendList td {
+    border: 1px solid black;
+    padding: 1px 2px;
+}
+
+.friendList p {
+    text-align: left;
+}
+
+/* alert styling */
+.alertMessage {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    bottom: 0px;
+    left: 60px;
+    position: fixed;
+    padding: 5px 12px;
+    margin: 5px 14px;
+}
+
+#alertFail {
+    background-color: #ee6c4d;
+}
+
+#alertReminder {
+    background-color: #134074;
+}
+
+#alertSuccess {
+    background-color: #3c6e71;
+}
